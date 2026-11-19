@@ -26,7 +26,7 @@ Quienes apoyan los juegos de Tailspin Toys necesitan asesoramiento sobre el cat�
 
 La integración utiliza el agente hospedado existente en lugar de crear nuevos recursos de Foundry.
 
-1. Retoma el mismo repositorio de Tailspin Toys, la misma rama del worktree y la misma sesión de la incidencia **Add a Backer Concierge assistant for catalog questions** de los módulos anteriores. Confirma que estén presentes el archivo `azure.yaml` de la raíz, el código fuente del agente y el catálogo, y comprueba la suscripción registrada, el grupo de recursos dedicado, el proyecto de Foundry, la implementación del modelo y la versión probada del agente hospedado.
+1. Retoma el mismo repositorio de Tailspin Toys, la misma rama del árbol de trabajo y la misma sesión de la incidencia **Add a Backer Concierge assistant for catalog questions** de los módulos anteriores. Confirma que estén presentes el archivo `azure.yaml` de la raíz, el código fuente del agente y el catálogo, y comprueba la suscripción registrada, el grupo de recursos dedicado, el proyecto de Foundry, la implementación del modelo y la versión probada del agente hospedado.
 2. Si se eliminaron los recursos, restaura el [proyecto y el modelo][project-module] y la [implementación hospedada probada][previous-module] que correspondan antes de realizar la integración.
 
 ## Crear el proxy del lado del servidor

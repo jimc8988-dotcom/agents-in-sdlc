@@ -35,7 +35,7 @@ Azure를 사용해 Backer Concierge를 호스팅하고 Copilot CLI로 작업을 
     ```
 
 4. `az login`으로 Azure CLI에 로그인하고 `az account show`로 올바른 구독을 사용 중인지 확인합니다.
-5. [Azure Developer CLI][install-azd] 버전 1.27.1 이상을 설치합니다. Microsoft Foundry는 `azd`를 사용해 호스트된 에이전트를 테스트하고 배포합니다.
+5. [Azure Developer CLI][install-azd] 버전 1.27.1 이상을 설치합니다. Microsoft Foundry는 `azd`를 사용해 호스팅 에이전트를 테스트하고 배포합니다.
 
     ```bash
     curl -sL https://aka.ms/install-azd.sh | bash
@@ -116,7 +116,7 @@ Copilot이 Azure 리소스를 만들거나 에이전트 코드를 추가하기 �
     /plan Use the Microsoft Foundry Skill to plan a Backer Concierge hosted agent for this existing Tailspin Toys repository. Use a public Foundry project, Python 3.13, Microsoft Agent Framework, the Responses API, the Basic sample, and code deployment. Keep the agent in agent/backer-concierge and keep one azure.yaml at the repository root. Ground every answer in db/catalog.json, preserve conversation context, and add focused tests. Include project setup, model selection, local testing, deployment, remote invocation, estimated cost-bearing resources and cleanup.
     ```
 
-2. 제안된 계획을 검토합니다. Copilot이 `microsoft-foundry` 스킬을 사용하려는지, 호스트된 에이전트를 기존 Astro 애플리케이션과 분리하는지 확인합니다. 우려되거나 예상과 다른 부분이 있으면 진행하기 전에 수정을 요청합니다.
+2. 제안된 계획을 검토합니다. Copilot이 `microsoft-foundry` 스킬을 사용하려는지, 호스팅 에이전트를 기존 Astro 애플리케이션과 분리하는지 확인합니다. 우려되거나 예상과 다른 부분이 있으면 진행하기 전에 수정을 요청합니다.
 3. 접근 방식이 만족스러우면 계획 모드를 종료합니다.
 
 ## Foundry 프로젝트와 모델 설정하기
@@ -156,9 +156,9 @@ Copilot이 Azure 리소스를 만들거나 에이전트 코드를 추가하기 �
 
 ## 배포된 모델 테스트하기
 
-호스트된 에이전트를 빌드하기 전에 모델이 Backer Concierge의 그라운딩(Grounding) 규칙을 따르는지 테스트합니다. 에이전트 코드나 구성 없이, 사용할 지침과 카탈로그 컨텍스트로 테스트합니다.
+호스팅 에이전트를 빌드하기 전에 모델이 Backer Concierge의 그라운딩(Grounding) 규칙을 따르는지 테스트합니다. 에이전트 코드나 구성 없이, 사용할 지침과 카탈로그 컨텍스트로 테스트합니다.
 
-먼저 로그인한 계정에 모듈 2의 호스트된 에이전트 개발을 위한 **Foundry Project Manager** 역할과 직접 모델 추론을 위한 **Cognitive Services OpenAI User** 역할을 부여합니다. 그런 다음 카탈로그에 없는 정보도 함께 요청하는 카탈로그 질문을 합니다.
+먼저 로그인한 계정에 모듈 2의 호스팅 에이전트 개발을 위한 **Foundry Project Manager** 역할과 직접 모델 추론을 위한 **Cognitive Services OpenAI User** 역할을 부여합니다. 그런 다음 카탈로그에 없는 정보도 함께 요청하는 카탈로그 질문을 합니다.
 
 1. 새 터미널을 열고 계정, 프로젝트, 사용자 값을 설정합니다. `<foundry-account-name>`을 프로젝트 생성 시 안내받은 Foundry 계정 이름으로 바꿉니다.
 
@@ -203,7 +203,7 @@ Copilot이 Azure 리소스를 만들거나 에이전트 코드를 추가하기 �
 5. 응답을 검토합니다. 카탈로그에 실제로 있는 게임만 추천하고, 올바른 카탈로그 정보를 사용하며, 모금 정보를 확인할 수 없다고 설명해야 합니다. 모델이 제목, 게임 정보, 총 모금액을 지어낸다면 계속 진행하기 전에 다른 추천 모델과 비교합니다.
 
 > [!NOTE]
-> 이 테스트는 임시 지침과 카탈로그 컨텍스트로 배포된 모델만 테스트합니다. 에이전트를 테스트하는 것은 아닙니다. 모듈 2에서는 스캐폴딩(Scaffolding) 후 이 테스트를 반복해 호스트된 에이전트의 코드, 패키징, 대화 동작을 검증합니다.
+> 이 테스트는 임시 지침과 카탈로그 컨텍스트로 배포된 모델만 테스트합니다. 에이전트를 테스트하는 것은 아닙니다. 모듈 2에서는 스캐폴딩(Scaffolding) 후 이 테스트를 반복해 호스팅 에이전트의 코드, 패키징, 대화 동작을 검증합니다.
 
 ## 요약 및 다음 단계
 

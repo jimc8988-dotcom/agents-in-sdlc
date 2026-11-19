@@ -61,7 +61,7 @@ Codespace로 돌아가 접근성 사용자 지정 에이전트 파일을 검토�
 2. **Issues** 탭을 선택합니다.
 3. **New issue**를 선택하여 새 이슈 대화 상자를 엽니다.
 4. **Blank issue**를 선택합니다.
-5. **Title**에 `웹사이트에 고대비 모드 추가`를 입력합니다.
+5. **Title**에 `Add high contrast mode to website`를 입력합니다.
 6. **Description**에 다음을 입력합니다.
 
     ```plaintext

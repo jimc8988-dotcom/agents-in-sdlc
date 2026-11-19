@@ -36,14 +36,14 @@ La configuración conecta la aplicación GitHub Copilot con Azure y mantiene uni
    ![Instalar el complemento Microsoft Foundry](../../../../_images/app-8-install-foundry-plugin.png)
 
 5. En **Customize**, selecciona **Plugins**, busca `azure` o selecciónalo en la lista **Featured** y, después, selecciona **Install** para el complemento Azure.
-6. Selecciona **Issues** en la barra lateral y, a continuación, busca y abre la incidencia titulada **Add a Backer Concierge assistant for catalog questions** en el repositorio de Tailspin Toys. Selecciona **New session** para iniciar una sesión vinculada a la incidencia en un worktree nuevo. Conserva este repositorio, esta rama del worktree y esta sesión de la incidencia durante los tres módulos.
+6. Selecciona **Issues** en la barra lateral y, a continuación, busca y abre la incidencia titulada **Add a Backer Concierge assistant for catalog questions** en el repositorio de Tailspin Toys. Selecciona **New session** para iniciar una sesión vinculada a la incidencia en un árbol de trabajo nuevo. Conserva este repositorio, esta rama del árbol de trabajo y esta sesión de la incidencia durante los tres módulos.
 7. Escribe `/microsoft-foundry` y, después, `/azure` para confirmar que ambas habilidades están instaladas y disponibles; no envíes ninguna indicación todavía. Si un complemento no aparece de inmediato, reinicia la aplicación, vuelve a esta misma sesión de la incidencia y compruébalo de nuevo.
 
 ## Generar la exportación del catálogo
 
 El repositorio de ejemplo incluye un script de exportación que proporciona al agente un archivo que puede leer.
 
-8. En esta sesión del worktree vinculada a la incidencia, sustituye la indicación predeterminada `/fix-issue` del cuadro de indicaciones por:
+8. En esta sesión del árbol de trabajo vinculada a la incidencia, sustituye la indicación predeterminada `/fix-issue` del cuadro de indicaciones por:
 
    ```plaintext
    Install the project dependencies, seed the database, then run the existing db:export script. Show me the command output and summarize the shape and grounding limits of db/catalog.json.
@@ -141,7 +141,7 @@ Esta comprobación verifica el proyecto y el modelo antes de que exista código 
 
 Has preparado las herramientas de Azure, exportado el catálogo y probado un modelo implementado con las reglas de fundamentación de Backer Concierge. El punto de control de este módulo es un modelo que recomienda juegos reales del catálogo sin inventar información que no está disponible.
 
-A continuación, usarás el mismo repositorio de Tailspin Toys, la misma rama del worktree, la misma sesión vinculada a la incidencia, el mismo proyecto de Foundry y la implementación del modelo seleccionada para [crear e implementar el agente][next-module]. Si te detienes aquí, [limpia los recursos de Azure][cleanup] para evitar costes continuos.
+A continuación, usarás el mismo repositorio de Tailspin Toys, la misma rama del árbol de trabajo, la misma sesión vinculada a la incidencia, el mismo proyecto de Foundry y la implementación del modelo seleccionada para [crear e implementar el agente][next-module]. Si te detienes aquí, [limpia los recursos de Azure][cleanup] para evitar costes continuos.
 
 [azure-free]: https://azure.microsoft.com/pricing/purchase-options/azure-account
 [azure-students]: https://azure.microsoft.com/free/students

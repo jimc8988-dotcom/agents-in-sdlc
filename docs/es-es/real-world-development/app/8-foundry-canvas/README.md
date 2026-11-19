@@ -15,7 +15,7 @@ Este recorrido opcional añade un **Backer Concierge** a Tailspin Toys mediante 
 
 ## El recorrido
 
-Cada módulo termina con un punto de control y un punto seguro para detenerte. Durante todo el recorrido se mantienen el mismo repositorio de Tailspin Toys, la misma rama del worktree, la misma sesión vinculada a la incidencia, el mismo proyecto de Foundry y la misma implementación del modelo.
+Cada módulo termina con un punto de control y un punto seguro para detenerte. Durante todo el recorrido se mantienen el mismo repositorio de Tailspin Toys, la misma rama del árbol de trabajo, la misma sesión vinculada a la incidencia, el mismo proyecto de Foundry y la misma implementación del modelo.
 
 - [Preparar el proyecto y el modelo][module-1] establece los límites del catálogo, crea el proyecto y la implementación del modelo, y los comprueba en Canvas.
 - [Crear e implementar el agente][module-2] genera la estructura inicial de Backer Concierge, lo prueba en local, e implementa y vuelve a probar el agente hospedado.
@@ -39,7 +39,7 @@ Cuando termines de experimentar en cualquier punto de control, elimina los recur
 > Si aprobaste otro nombre para el grupo de recursos en el módulo 1, sustituye `rg-tailspin-toys` por ese nombre en todos los comandos siguientes.
 
 1. Detén desde sus terminales cualquier proceso local de Agent Inspector, Azure Function o servidor de desarrollo de Astro que hayas iniciado.
-2. Si has implementado el agente hospedado en el módulo 2 o 3, abre un terminal en el mismo worktree de Tailspin Toys, usa el mismo entorno de `azd` y ejecuta:
+2. Si has implementado el agente hospedado en el módulo 2 o 3, abre un terminal en el mismo árbol de trabajo de Tailspin Toys, usa el mismo entorno de `azd` y ejecuta:
 
    ```bash
    azd down --purge

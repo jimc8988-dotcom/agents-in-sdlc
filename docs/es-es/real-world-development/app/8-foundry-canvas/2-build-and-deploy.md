@@ -153,7 +153,7 @@ Canvas utiliza `azd` para implementar el agente probado. Foundry empaqueta el c�
 
 Has generado la estructura inicial de Backer Concierge, probado en local su fundamentación en el catálogo y su comportamiento durante la conversación, lo has implementado en Microsoft Foundry y has vuelto a probar la versión hospedada. El punto de control de este módulo es un agente hospedado que supera las seis comprobaciones de aceptación sin inventar información que no está disponible.
 
-A continuación, usarás el mismo repositorio de Tailspin Toys, la misma rama del worktree, la misma sesión vinculada a la incidencia, el mismo proyecto de Foundry, la implementación del modelo seleccionada y el agente hospedado para [conectar el agente al sitio][next-module]. Si te detienes aquí, [limpia los recursos de Azure][cleanup] para evitar costes continuos.
+A continuación, usarás el mismo repositorio de Tailspin Toys, la misma rama del árbol de trabajo, la misma sesión vinculada a la incidencia, el mismo proyecto de Foundry, la implementación del modelo seleccionada y el agente hospedado para [conectar el agente al sitio][next-module]. Si te detienes aquí, [limpia los recursos de Azure][cleanup] para evitar costes continuos.
 
 [previous-module]: ../1-project-and-model/
 [next-module]: ../3-connect-to-site/

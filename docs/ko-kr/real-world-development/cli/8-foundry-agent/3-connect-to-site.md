@@ -1,6 +1,6 @@
 ---
 title: "모듈 3 - 에이전트를 웹사이트에 연결하기"
-description: "로컬 Azure Functions 프록시와 접근성을 갖춘 채팅 위젯을 통해 호스트된 Backer Concierge를 Tailspin Toys에 연결합니다."
+description: "로컬 Azure Functions 프록시와 접근성을 갖춘 채팅 위젯을 통해 호스팅 Backer Concierge를 Tailspin Toys에 연결합니다."
 authors:
   - juliamuiruri4
 lastUpdated: 2026-09-16
@@ -19,7 +19,7 @@ next: false
 
 후원자는 개발자 터미널이나 Azure Portal이 아니라 Tailspin Toys 웹사이트에서 게임을 찾습니다. 팀은 카탈로그와 함께 컨시어지(Concierge)를 제공하면서 후속 질문을 지원하고 서비스 자격 증명을 보호하는 채팅 경험을 구현하려고 합니다.
 
-## 호스트된 에이전트에서 계속하기
+## 호스팅 에이전트에서 계속하기
 
 웹사이트 통합에는 모듈 2에서 배포한 에이전트가 필요합니다. 프록시와 웹사이트는 로컬에서 실행하고, 에이전트는 Foundry에서 계속 실행 상태로 유지합니다.
 
@@ -27,13 +27,13 @@ next: false
 2. Backer Concierge가 배포되어 있고 [에이전트 빌드 및 배포하기][previous-lesson]의 원격 호출이 성공했는지 확인합니다. Azure 리소스를 이미 제거했다면 계속 진행하기 전에 이전 모듈을 따라 다시 만듭니다.
 
 > [!IMPORTANT]
-> 이 모듈의 프록시와 웹사이트는 로컬에서 실행합니다. 프로덕션 웹사이트 배포가 아닙니다. 모델과 호스트된 에이전트(Hosted agent)는 [정리][cleanup]를 완료할 때까지 요금이 부과되는 Azure 리소스로 남아 있습니다.
+> 이 모듈의 프록시와 웹사이트는 로컬에서 실행합니다. 프로덕션 웹사이트 배포가 아닙니다. 모델과 호스팅 에이전트(Hosted agent)는 [정리][cleanup]를 완료할 때까지 요금이 부과되는 Azure 리소스로 남아 있습니다.
 
 ## 서버 측 프록시 빌드하기
 
-Tailspin Toys는 전체를 사전 렌더링합니다. 브라우저 코드는 호스트된 에이전트를 직접 호출하거나 Foundry 자격 증명을 받아서는 안 됩니다. Foundry에 인증하고 에이전트 응답만 브라우저에 반환하는 로컬 Azure Functions **서버 측 자격 증명 경계**를 추가합니다.
+Tailspin Toys는 전체를 사전 렌더링합니다. 브라우저 코드는 호스팅 에이전트를 직접 호출하거나 Foundry 자격 증명을 받아서는 안 됩니다. Foundry에 인증하고 에이전트 응답만 브라우저에 반환하는 로컬 Azure Functions **서버 측 자격 증명 경계**를 추가합니다.
 
-`microsoft-foundry` 스킬은 호스트된 에이전트 작업 흐름을 담당하며, 같은 플러그인에 포함된 더 폭넓은 Azure 스킬은 로컬 Function 프로젝트를 준비할 수 있습니다. 이러한 스킬로 프록시를 빌드한 뒤 자격 증명을 노출하지 않고 에이전트에 연결하는지 확인합니다.
+`microsoft-foundry` 스킬은 호스팅 에이전트 작업 흐름을 담당하며, 같은 플러그인에 포함된 더 폭넓은 Azure 스킬은 로컬 Function 프로젝트를 준비할 수 있습니다. 이러한 스킬로 프록시를 빌드한 뒤 자격 증명을 노출하지 않고 에이전트에 연결하는지 확인합니다.
 
 1. Copilot CLI에 다음을 입력합니다.
 
@@ -85,7 +85,7 @@ Tailspin Toys는 전체를 사전 렌더링합니다. 브라우저 코드는 호
 
 ## 요약 및 다음 단계
 
-로컬 서버 측 프록시와 접근성을 갖춘 채팅 위젯을 통해 호스트된 Backer Concierge를 Tailspin Toys에 연결했습니다. 시리즈 전반에서 GitHub Copilot CLI와 Foundry를 사용해 모델을 준비하고, 에이전트를 빌드 및 배포한 뒤 완전한 웹사이트 통합을 검증했습니다.
+로컬 서버 측 프록시와 접근성을 갖춘 채팅 위젯을 통해 호스팅 Backer Concierge를 Tailspin Toys에 연결했습니다. 시리즈 전반에서 GitHub Copilot CLI와 Foundry를 사용해 모델을 준비하고, 에이전트를 빌드 및 배포한 뒤 완전한 웹사이트 통합을 검증했습니다.
 
 CLI 워크숍을 마무리하려면 [마무리 및 다음 단계][review]로 이동합니다.
 

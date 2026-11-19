@@ -7,12 +7,12 @@ authors:
 lastUpdated: 2026-09-16
 ---
 
-이 선택 사항 시리즈에서는 GitHub Copilot CLI와 Microsoft Foundry Skill을 사용해 Tailspin Toys 카탈로그를 대화형 도우미로 만듭니다. 3개 모듈을 통해 프로젝트와 모델 설정부터 호스트된 에이전트(Hosted agent)와 실제로 작동하는 웹사이트 통합까지 진행합니다.
+이 선택 사항 시리즈에서는 GitHub Copilot CLI와 Microsoft Foundry Skill을 사용해 Tailspin Toys 카탈로그를 대화형 도우미로 만듭니다. 3개 모듈을 통해 프로젝트와 모델 설정부터 호스팅 에이전트(Hosted agent)와 실제로 작동하는 웹사이트 통합까지 진행합니다.
 
 이 시리즈에서는 다음을 수행합니다.
 
 - Azure 환경을 준비하고 카탈로그를 기준으로 모델을 테스트합니다.
-- 호스트된 Backer Concierge 에이전트를 스캐폴드(Scaffold)하고 테스트 및 배포합니다.
+- 호스팅 Backer Concierge 에이전트를 스캐폴드(Scaffold)하고 테스트 및 배포합니다.
 - 로컬 서버 측 프록시(Proxy)와 채팅 위젯을 통해 에이전트를 웹사이트에 연결합니다.
 
 ## 시나리오
@@ -30,13 +30,13 @@ Tailspin Toys는 후원자가 대화를 통해 게임을 찾도록 돕는 **Back
 | 모듈 | 수행할 작업 | 완료 시점의 결과물 |
 | --- | --- | --- |
 | [1. 프로젝트와 모델 준비하기][project-model] | 도구를 설정하고, 카탈로그를 내보내고, 모델을 선택하고 테스트합니다 | 카탈로그 질문에 올바르게 답하는 배포된 모델 |
-| [2. 에이전트 빌드 및 배포하기][build-deploy] | 에이전트를 스캐폴드하고, 동작을 테스트한 뒤 Foundry에 배포합니다 | 정상적으로 작동하는 호스트된 Backer Concierge |
+| [2. 에이전트 빌드 및 배포하기][build-deploy] | 에이전트를 스캐폴드하고, 동작을 테스트한 뒤 Foundry에 배포합니다 | 정상적으로 작동하는 호스팅 Backer Concierge |
 | [3. 에이전트를 웹사이트에 연결하기][connect-site] | 로컬 프록시와 채팅 위젯을 빌드한 뒤 전체 흐름을 테스트합니다 | 로컬 웹사이트에서 사용할 수 있는 컨시어지 |
 
 > [!IMPORTANT]
-> Microsoft Foundry 호스트된 에이전트는 공개 미리 보기 상태입니다.
+> Microsoft Foundry 호스팅 에이전트는 공개 미리 보기 상태입니다.
 >
-> 이 시리즈에서는 모델 배포와 호스트된 에이전트를 비롯해 요금이 부과되는 Azure 리소스를 만듭니다. 리소스를 만들기 전에 선택한 구독, 지역, 할당량, 예상 비용을 검토해야 합니다. 첫 번째 또는 두 번째 모듈을 마친 뒤 중단하더라도 [정리 지침][cleanup]을 따라야 합니다.
+> 이 시리즈에서는 모델 배포와 호스팅 에이전트를 비롯해 요금이 부과되는 Azure 리소스를 만듭니다. 리소스를 만들기 전에 선택한 구독, 지역, 할당량, 예상 비용을 검토해야 합니다. 첫 번째 또는 두 번째 모듈을 마친 뒤 중단하더라도 [정리 지침][cleanup]을 따라야 합니다.
 
 1. 선택 사항 시리즈를 시작하려면 [프로젝트와 모델 준비하기][project-model]로 이동합니다. 설정 지침도 해당 모듈에 포함되어 있습니다.
 2. 핵심 워크숍을 마무리하고 싶다면 [마무리 및 다음 단계][review]로 이동합니다.
@@ -68,8 +68,8 @@ Tailspin Toys는 후원자가 대화를 통해 게임을 찾도록 돕는 **Back
 
 - [Azure Skills Plugin][azure-skills]
 - [코딩 에이전트에서 Microsoft Foundry Skill 사용하기][foundry-skill]
-- [Microsoft Foundry Skill로 첫 호스트된 에이전트 배포하기][hosted-agent-quickstart]
-- [호스트된 에이전트 권한][hosted-agent-permissions]
+- [Microsoft Foundry Skill로 첫 호스팅 에이전트 배포하기][hosted-agent-quickstart]
+- [호스팅 에이전트 권한][hosted-agent-permissions]
 
 [project-model]: 1-project-and-model/
 [build-deploy]: 2-build-and-deploy/
